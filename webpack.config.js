@@ -65,6 +65,12 @@ module.exports = {
       }
     ]
   },
+  devServer : {
+    contentBase: __dirname,
+    port: 9000,
+    open: true,
+    openPage: "examples/example.html"
+  },
   externals: {
     'angular': 'var angular',
     'tv4': 'var tv4',

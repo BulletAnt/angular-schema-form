@@ -10,13 +10,14 @@
   "filename": "dist/angular-schema-form.min.js",
   "homepage": "https://github.com/json-schema-form/angular-schema-form#readme",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --color",
     "dist": "webpack --config webpack.config.dist.js",
     "watch": "webpack --watch",
     "testlinux": "rm -fr coverage && ./node_modules/karma/bin/karma start --single-run --browsers PhantomJS karma.conf.js && find coverage/ -name lcov.info -print0 | xargs -0 cat | ./node_modules/coveralls/bin/coveralls.js",
     "lint": "eslint src/**/*.js",
     "test": "karma start karma.conf.js --log-level debug --single-run",
-    "tests": "karma start karma.conf.js --log-level debug --auto-watch"
+    "tests": "karma start karma.conf.js --log-level debug --auto-watch",
+    "server": "webpack-dev-server"
   },
   "author": "json-schema-form",
   "contributors": [
