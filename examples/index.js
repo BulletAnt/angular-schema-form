@@ -33,7 +33,7 @@
     exampleController.$inject = [ '$scope', '$http' ];
 
     function exampleController ( $scope, $http ) {
-        
+
         $scope.tests = [
             { name: "JSON Ref", data: 'data/jsonref.json' },
             { name: "Simple", data: 'data/simple.json' },
@@ -44,7 +44,6 @@
             { name: "Array of types", data: 'data/array-of-types.json' },
             { name: "Tab Array", data: 'data/tabarray.json' },
             { name: "Deep Array", data: 'data/deep-array.json' },
-            //{ name: "Array Radio-Buttons", data: 'data/array-radiobuttons.json' },
             { name: "TitleMap Examples", data: 'data/titlemaps.json' },
             { name: "Kitchen Sink", data: 'data/sink.json' },
             { name: "Calculate", data: 'data/calculate.json' },
